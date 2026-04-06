@@ -27,6 +27,7 @@ def request(method: str, path: str, payload=None):
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Accept": "application/json",
+        "User-Agent": "mimir-agent/1.0",
     }
     data = None
     if payload is not None:
